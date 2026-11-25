@@ -8,11 +8,11 @@ A one-line roast of a smart fridge that refuses to open after midnight, entered 
 
 ## The entry
 
-> It's 12:01 and my fridge just told me no — I've been dumped by a box of milk.
+> At midnight my fridge locks and says, 'Come back tomorrow' — it's a bouncer with a salad drawer.
 
 ## How it works
 
-`main.ts` deterministically writes the roast above to `/output/entry.txt` (77 characters, well inside the 1–200 character gate). No network, no randomness, no input — the same line every run.
+`main.ts` deterministically writes the roast above to `/output/entry.txt` (96 characters, well inside the 1–200 character gate), after a runtime assertion that the line is a single non-blank line of 1–200 characters. No network, no randomness, no input — the same line every run.
 
 Run it locally:
 
